@@ -69,7 +69,6 @@ type
     Edit1: TEdit;
     procedure oneClick(Sender: TObject);
     procedure maisClick(Sender: TObject);
-    procedure fiveClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -85,16 +84,9 @@ implementation
 
 {$R *.dfm}
 
-procedure TForm1.fiveClick(Sender: TObject);
-begin
-  numero := 5;
-  Edit1.Text := FloatToStr(numero);
-end;
-
 procedure TForm1.maisClick(Sender: TObject);
 begin
   Edit1.Clear;
-  Edit1.Alignment:= taRightJustify;
   Edit1.Text := mais.Caption;
 end;
 
